@@ -1,0 +1,115 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    color: #c7d5e0;
+}
+
+.navbar {
+    display: flex;
+    background-color: #171a21;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #4c6b88; /* Сплошная линия внизу */
+}
+
+    .navbar button {
+        background-color: transparent; /* Убираем фон */
+        color: #c7d5e0;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        font-size: 16px; /* Увеличиваем шрифт */
+        position: relative;
+    }
+
+        .navbar button.active {
+            color: #1a9fff; /* Подсветка активной вкладки */
+            font-weight: bold;
+        }
+
+        .navbar button:hover {
+            color: #66c0f4; /* Цвет при наведении */
+            background-color: transparent; /* Убираем фон при наведении */
+        }
+
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+    .tab.active {
+        display: block;
+    }
+
+input, button {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #2a475e;
+    border: 1px solid #4c6b88;
+    color: #c7d5e0;
+    border-radius: 4px;
+}
+
+    input::placeholder {
+        color: #8f98a0;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+}
+
+canvas {
+    background-color: #1b2838; /* Темный фон для канваса */
+    border-radius: 4px; /* Скругленные углы для графика */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #171a21;
+    padding: 10px;
+    gap: 10px;
+}
+
+.navbar-logo {
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+}
+
